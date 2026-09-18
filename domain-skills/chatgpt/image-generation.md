@@ -25,3 +25,7 @@ Screenshots and local image inspection remain necessary: successful download doe
 When independent agents share one browser daemon, do not call helpers that change its global current session. Create a new target with `Target.createTarget`, attach with `Target.attachToTarget`, then pass that returned `session_id` explicitly on every tab-specific CDP call. Browser-level target creation/attachment can use the browser session. Pin and verify both target and URL before editing; if the user closes a target, re-establish the owned tab deliberately instead of acting on a fallback tab.
 
 The daemon uses one JSON line per request. Large inline data URLs can exceed its incoming line limit. For sizeable reference or audio files, use a file upload or an authorized task-local URL instead of injecting a large base64 literal.
+
+## Corrections within a book conversation
+
+Name the exact earlier surface and folio when correcting it after a later page has generated. Explicitly preserve its copy and layout, and save the correction separately until it has been reviewed. A repeated image description is possible after an edit, so verify the new response position as well as the image's descriptive alt text. Small exact counts (seeds, cherries, buttons) still need visual inspection; a prompt saying "six total" is not a count check.
